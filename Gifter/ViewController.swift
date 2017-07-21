@@ -10,9 +10,10 @@ import UIKit
 import FBSDKLoginKit
 import Firebase
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     let loginViewModel = LoginViewModel()
+    let routable = Routable()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             print(error)
         }
         loginViewModel.loginIntoFirebaseUsingFBCredentials()
+        let layout = UICollectionViewFlowLayout()
+        let friendsListViewController = FriendsListCollectionViewController(collectionViewLayout: layout)
+        let navFriendsListController = UINavigationController(rootViewController: friendsListViewController)
+        self.routable.topViewController()?.present(navFriendsListController, animated: true, completion: nil)
     }
     
     

@@ -14,7 +14,7 @@ class LoginViewModel: LoginViewModelProtocol {
     
     var user = User()
     let routable = Routable()
-        
+    
     private func fbFriendsGraphRequest() {
         let parameters = ["fields" : "id, first_name, last_name, name, email, picture"]
         FBSDKGraphRequest(graphPath: "/me/friends", parameters: parameters).start { (connection, result, error) in
@@ -36,6 +36,8 @@ class LoginViewModel: LoginViewModelProtocol {
         }
         
     }
+    
+
     
     private func fbUserGraphRequest(){
         let parameters = ["fields": "email, id, name"]
@@ -62,6 +64,7 @@ class LoginViewModel: LoginViewModelProtocol {
                 print("Something went wrong with login", error ?? "unknown error")
             }
             self.fbUserGraphRequest()
+            self.fbFriendsGraphRequest()
         }
     }
     
@@ -72,10 +75,10 @@ class LoginViewModel: LoginViewModelProtocol {
             if error != nil {
                 print(error ?? "unknown error")
             }
-            let layout = UICollectionViewFlowLayout()
-            let friendsListViewController = FriendsListCollectionViewController(collectionViewLayout: layout)
-            let navFriendsListController = UINavigationController(rootViewController: friendsListViewController)
-            self.routable.topViewController()?.present(navFriendsListController, animated: true, completion: nil)
+//            let layout = UICollectionViewFlowLayout()
+//            let friendsListViewController = FriendsListCollectionViewController(collectionViewLayout: layout)
+//            let navFriendsListController = UINavigationController(rootViewController: friendsListViewController)
+//            self.routable.topViewController()?.present(navFriendsListController, animated: true, completion: nil)
             
         }
     }

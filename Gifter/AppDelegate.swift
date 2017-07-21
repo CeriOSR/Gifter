@@ -23,8 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let rootViewController = ViewController()
-        window?.rootViewController = rootViewController
+        let layout = UICollectionViewFlowLayout()
+        let rootViewController = FriendsListCollectionViewController(collectionViewLayout: layout)
+        let navRootController = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = navRootController
         
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)

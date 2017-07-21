@@ -34,6 +34,11 @@
 		E0AAAE0C1F1FBE9D00873B28 /* Routables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AAAE0B1F1FBE9D00873B28 /* Routables.swift */; };
 		E0AAAE0D1F1FBE9D00873B28 /* Routables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AAAE0B1F1FBE9D00873B28 /* Routables.swift */; };
 		E0AAAE0E1F1FBE9D00873B28 /* Routables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AAAE0B1F1FBE9D00873B28 /* Routables.swift */; };
+		E0AAAE0F1F2057E400873B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DAA34D1F144B1A00BC121A /* ViewController.swift */; };
+		E0AAAE101F2057E500873B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DAA34D1F144B1A00BC121A /* ViewController.swift */; };
+		E0AAAE121F210DF600873B28 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AAAE111F210DF600873B28 /* FriendsListViewModel.swift */; };
+		E0AAAE131F210DF600873B28 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AAAE111F210DF600873B28 /* FriendsListViewModel.swift */; };
+		E0AAAE141F210DF600873B28 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AAAE111F210DF600873B28 /* FriendsListViewModel.swift */; };
 		E0DAA34C1F144B1A00BC121A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DAA34B1F144B1A00BC121A /* AppDelegate.swift */; };
 		E0DAA34E1F144B1A00BC121A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DAA34D1F144B1A00BC121A /* ViewController.swift */; };
 		E0DAA3511F144B1A00BC121A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DAA34F1F144B1A00BC121A /* Main.storyboard */; };
@@ -82,6 +87,7 @@
 		E0AAAE021F1F06A200873B28 /* FriendsListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListCollectionViewController.swift; sourceTree = "<group>"; };
 		E0AAAE071F1F070700873B28 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
 		E0AAAE0B1F1FBE9D00873B28 /* Routables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routables.swift; sourceTree = "<group>"; };
+		E0AAAE111F210DF600873B28 /* FriendsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListViewModel.swift; sourceTree = "<group>"; };
 		E0DAA3481F144B1A00BC121A /* Gifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DAA34B1F144B1A00BC121A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DAA34D1F144B1A00BC121A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 			children = (
 				E0AAADF31F1F006400873B28 /* LoginViewModel.swift */,
 				E0AAAE0B1F1FBE9D00873B28 /* Routables.swift */,
+				E0AAAE111F210DF600873B28 /* FriendsListViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -552,6 +559,7 @@
 				E0AAADED1F1E6B1900873B28 /* Extensions.swift in Sources */,
 				E0AAAE031F1F06A200873B28 /* FriendsListCollectionViewController.swift in Sources */,
 				E0DAA34E1F144B1A00BC121A /* ViewController.swift in Sources */,
+				E0AAAE121F210DF600873B28 /* FriendsListViewModel.swift in Sources */,
 				E0AAADFA1F1F00EF00873B28 /* Protocols.swift in Sources */,
 				E0AAADFF1F1F02BC00873B28 /* Models.swift in Sources */,
 				E0AAADF41F1F006400873B28 /* LoginViewModel.swift in Sources */,
@@ -566,6 +574,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AAAE0F1F2057E400873B28 /* ViewController.swift in Sources */,
+				E0AAAE131F210DF600873B28 /* FriendsListViewModel.swift in Sources */,
 				E0AAAE041F1F06A200873B28 /* FriendsListCollectionViewController.swift in Sources */,
 				E0AAAE0D1F1FBE9D00873B28 /* Routables.swift in Sources */,
 				E0AAADFB1F1F00EF00873B28 /* Protocols.swift in Sources */,
@@ -582,6 +592,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AAAE101F2057E500873B28 /* ViewController.swift in Sources */,
+				E0AAAE141F210DF600873B28 /* FriendsListViewModel.swift in Sources */,
 				E0AAAE051F1F06A200873B28 /* FriendsListCollectionViewController.swift in Sources */,
 				E0AAAE0E1F1FBE9D00873B28 /* Routables.swift in Sources */,
 				E0AAADFC1F1F00EF00873B28 /* Protocols.swift in Sources */,

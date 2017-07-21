@@ -13,3 +13,12 @@ struct User {
     var id: String?
     var email: String?
 }
+
+struct Friends {
+    var id: String?
+    var firstName: String?
+    var lastName: String?
+    var name: String?
+    var email: String?
+    var picture: String?
+}

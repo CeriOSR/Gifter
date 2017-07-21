@@ -15,3 +15,7 @@ protocol LoginViewModelProtocol {
 protocol RoutableProtocol {
 
 }
+
+protocol FriendsListProtocol {
+    
+}
