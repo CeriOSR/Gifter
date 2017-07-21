@@ -27,6 +27,20 @@ class FriendsListViewModel {
                 let valueDict : NSDictionary = data[i] as! NSDictionary
                 let id = valueDict.object(forKey: "id") as! String
                 
+                var friends = Friends()
+                friends.id = valueDict.object(forKey: "id") as? String
+                friends.firstName = valueDict.object(forKey: "first_name") as? String
+                friends.lastName = valueDict.object(forKey: "last_name") as? String
+                friends.name = valueDict.object(forKey: "name") as? String
+                friends.email = valueDict.object(forKey: "email") as? String
+                friends.picture = valueDict.object(forKey: "picture") as AnyObject
+                
+                print(friends.id!)
+                print(friends.firstName!)
+                print(friends.lastName!)
+                print(friends.name!)
+                print(friends.email!)
+                print(friends.picture!)
                 print("the id value is \(id)")
             }
             

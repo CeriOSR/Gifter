@@ -20,5 +20,5 @@ struct Friends {
     var lastName: String?
     var name: String?
     var email: String?
-    var picture: String?
+    var picture: AnyObject?
 }
