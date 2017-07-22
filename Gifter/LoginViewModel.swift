@@ -56,15 +56,15 @@ class LoginViewModel: LoginViewModelProtocol {
                 friends.firstName = valueDict.object(forKey: "first_name") as? String
                 friends.lastName = valueDict.object(forKey: "last_name") as? String
                 friends.name = valueDict.object(forKey: "name") as? String
-//                friends.email = valueDict.object(forKey: "email") as? String
-                friends.picture = valueDict.object(forKey: "picture") as AnyObject
+                let picture = valueDict.object(forKey: "picture") as! [String: AnyObject]
+                let data = picture["data"] as! [String: AnyObject]
+                friends.imageUrl = data["url"] as? String
                 
                 print(friends.id!)
                 print(friends.firstName!)
                 print(friends.lastName!)
                 print(friends.name!)
-//                print(friends.email!)
-                print(friends.picture!)
+                print(friends.imageUrl!)
                 print("the id value is \(id)")
             }
             
